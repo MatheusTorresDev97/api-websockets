@@ -7,8 +7,8 @@ export function selecionarDocumento(nome) {
 }
 
 
-export function emitirTextoEditor(texto) {
-  socket.emit("texto_editor", texto);
+export function emitirTextoEditor(dados) {
+  socket.emit("texto_editor", dados);
 }
 
 socket.on("texto_editor_clientes", (texto) => {
